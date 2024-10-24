@@ -10,13 +10,13 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-secondary text-white"> {/* Adicionei bg-primary para deixar o fundo azul */}
             <div className="container">
                 <a className="navbar-brand" href="#">
                 </a>
 
                 <img
-                    className="mt-4"
+                    className="mt-2"
                     src={logo}
                     alt="Logo"
                     width="85"
@@ -27,17 +27,16 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <a className="nav-link" href="#">Veiculos</a>
-                        <a className="nav-link" href="#">Como Funciona</a>
-                        <a className="nav-link" href="#">O que está incluso?</a>
+                        <a className="nav-link text-white" href="#">Veículos</a> {/* Adicionei text-white para o texto */}
+                        <a className="nav-link text-white" href="#">Como Funciona</a>
+                        <a className="nav-link text-white" href="#">O que está incluso?</a>
                     </div>
                 </div>
-                <Link style={{ color: 'black', width:"6em", padding:'2em' }} to={"../Login"} >Login</Link>
+                <div className="text-white" style={{ width: "6em", padding: '2em' }} to={"../Login"}>Login</div> {/* Text-white aqui também */}
                 <div style={{ margin: "right" }} className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle m-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src={vector}
-                            height="24px"
-                        ></img>
+                    <button className="btn m-3" type="button" aria-expanded="false">
+                        <img src={vector} height="24px" alt="Cidade" />
+                        <a className="text-white">Cidade</a> {/* Text-white para o link da cidade */}
                     </button>
                 </div>
             </div>

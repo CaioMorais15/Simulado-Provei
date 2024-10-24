@@ -10,10 +10,11 @@ import Login from './components/Login/Login'
 function App() {
   return (
     <>
-    <Navbar />
-  <Login />
+      <Navbar />
+      <Login />
     </>
-    
-  )}
+
+  )
+}
 
 export default App

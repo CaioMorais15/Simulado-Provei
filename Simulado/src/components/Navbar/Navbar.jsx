@@ -7,55 +7,52 @@ import "bootstrap/dist/js/bootstrap.bundle.JS";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container">
-        <a className="navbar-brand" href="#"></a>
+    return (
+        <nav className="navbar navbar-expand-lg bg-secondary text-white"> {/* Adicionei bg-primary para deixar o fundo azul */}
+            <div className="container">
+                <a className="navbar-brand" href="#">
+                </a>
 
-        <img className="mt-4" src={logo} alt="Logo" width="85" height="85" />
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link" href="#">
+                <img
+                    className="mt-2"
+                    src={logo}
+                    alt="Logo"
+                    width="85"
+                    height="85"
+                />
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav me-auto">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/Veiculos" style={{ color:'black',}} >
               Veiculos
-            </a>
-            <a className="nav-link" href="#">
-              Como Funciona
-            </a>
-            <a className="nav-link" href="#">
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/O que está incluso?" style={{ color:'black',}}>
               O que está incluso?
-            </a>
-          </div>
-        </div>
-        <Link
-          style={{ color: "black", width: "6em", padding: "2em" }}
-          to={"../Login"}
-        >
-          Login
-        </Link>
-        <div style={{ margin: "right" }} className="dropdown">
-          <button
-            className="btn btn-secondary dropdown-toggle m-3"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <img src={vector} height="24px"></img>
-          </button>
-        </div>
-      </div>
-    </nav>
-  );
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Como Funciona" style={{color:'black',}} >
+              
+              Como Funciona
+              </Link>             
+            </li>
+          </ul>
+                </div>
+                <div className="text-white" style={{ width: "6em", padding: '2em' }} to={"../Login"}>Login</div> {/* Text-white aqui também */}
+                <div style={{ margin: "right" }} className="dropdown">
+                    <button className="btn m-3" type="button" aria-expanded="false">
+                        <img src={vector} height="24px" alt="Cidade" />
+                        <a className="text-white">Cidade</a> {/* Text-white para o link da cidade */}
+                    </button>
+                </div>
+            </div>
+        </nav>
+    );
 }
 
 export default Navbar;

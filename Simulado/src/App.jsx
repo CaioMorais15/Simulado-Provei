@@ -13,9 +13,9 @@ function App() {
   return (
     <>
   <Navbar />
-  <Header />
-  <Footer />
   <Outlet />
+  <Footer />
+  {/* <Header /> */}
     </>
     
   )}

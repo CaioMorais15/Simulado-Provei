@@ -2,9 +2,18 @@ import "./Veiculos.css"
 import React from "react"
 function Veiculos() {
     const carros = [
-      // Array de objetos com os dados dos carros
-    ];
-  
+            {
+              id: 1,
+              marca: 'Volkswagen',
+              modelo: 'Polo Confortline',
+              categoria: 'Hatch',
+              caracteristicas: '...',
+              imagem: 'caminho/para/imagem.jpg',
+              preco: 'A partir de R$ 82.799'
+            },
+            // ... outros carros
+          ];
+    
     return (
       <div className="tabela-carros">
         <table>

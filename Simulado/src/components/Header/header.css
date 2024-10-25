@@ -1,5 +1,8 @@
-.Quadro {
-    color: #F6F6F6;
+.quadro{
+    color: aquamarine;
+}
+.container {
+    color: #000000;
 }
 
 .text {
@@ -7,3 +10,18 @@
     font-family: Mochiy pop one;
     font-size: 20px;
 }
+h2 {
+    color: #000;
+  }
+  
+  p.text-warning {
+    font-size: 1.25rem; /* Tamanho da descrição */
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .card-footer hr {
+    margin-top: 0.5rem;
+  }

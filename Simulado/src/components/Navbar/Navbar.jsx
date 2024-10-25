@@ -28,6 +28,10 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
+            <Link className="nav-link active" to="/Header" style={{ color:'black',}} >
+              Home
+              </Link>
+              <li className="nav-item"></li>
               <Link className="nav-link active" to="/Veiculos" style={{ color:'black',}} >
               Veiculos
               </Link>
@@ -45,11 +49,11 @@ function Navbar() {
             </li>
           </ul>
                 </div>
-                <div className="text-white" style={{ width: "6em", padding: '2em' }} to={"../Login"}>Login</div> {/* Text-white aqui também */}
+                <Link className="text-white" style={{ width: "6em", padding: '2em' }} to={"../Login"}>Login</Link> 
                 <div style={{ margin: "right" }} className="dropdown">
                     <button className="btn m-3" type="button" aria-expanded="false">
                         <img src={vector} height="24px" alt="Cidade" />
-                        <a className="text-white">Cidade</a> {/* Text-white para o link da cidade */}
+                        <a className="text-white">Cidade</a> 
                     </button>
                 </div>
             </div>

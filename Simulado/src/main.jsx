@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client";
 import './index.css'
 import App from './App.jsx'
 import Veiculos from './components/Veiculos/Veiculos.jsx';
+import Login from "./components/Login/Login.jsx"
+import Header from "./components/Header/header.jsx"
 
 const router = createBrowserRouter([
   {
@@ -12,7 +14,10 @@ const router = createBrowserRouter([
     children: [
       
       { path: "/Veiculos", element: <Veiculos /> },
+      { path: "/Header", element: <Header /> },
+      { path: "/Login", element: <Login /> },
       
+
     ],
   },
 ]);

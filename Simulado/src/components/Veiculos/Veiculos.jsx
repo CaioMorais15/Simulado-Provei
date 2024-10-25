@@ -1,18 +1,19 @@
 import "./Veiculos.css"
 import React from "react"
-import Polo from "../../assets/polo.png"
-const carros = [
-    {
-        id: 1,
-        marca: 'Volkswagen',
-        modelo: 'Polo Confortline',
-        categoria: 'Hatch',
-        caracteristicas: '...',
-        imagem: 'caminho/para/imagem.jpg',
-        preco: 'A partir de R$ 82.799'
-      },
-  ];
 function Veiculos() {
+    const carros = [
+            {
+              id: 1,
+              marca: 'Volkswagen',
+              modelo: 'Polo Confortline',
+              categoria: 'Hatch',
+              caracteristicas: '...',
+              imagem: 'caminho/para/imagem.jpg',
+              preco: 'A partir de R$ 82.799'
+            },
+            // ... outros carros
+          ];
+    
     return (
         
         <div className="container text-center">

@@ -1,10 +1,8 @@
-:root{
-    --font-raleway:"Raleway", sans-serif;
-    
-}
 
 body {
-    background-color: #181A20;
+    background-color: #FFFFFF;
+    src: url('caminho/para/Jersey25.ttf') format('truetype');
+    font-weight: bold;
 }
 
 .container{
@@ -12,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100dvh;
+    
 }
 a {
 text-decoration: none;
@@ -19,7 +18,7 @@ font-size: 14px;
 }
 
 .caixa {
-    color: #FFFFFF;
+    color: #000;
     text-align: center;
     font-size: 35px;
     justify-content: center;
@@ -30,39 +29,39 @@ font-size: 14px;
 
 .tituloEmail {
     text-align: left;
-    color: #FFFFFF;
+    color: #000;
     font-size: 20px;
 }
 
 .campoEmail {
-    color: #181A20;
+    color: #000;
     font-family: Mochiy Pop One;
     align-items: left;
     width: 100%;
     padding: 12px;
     border-radius: 8px;
-    outline-color: #FFFFFF;
     font-size: 14px;
     padding-right: 0;
 }
 
 .tituloSenha {
-    color: #FFFFFF;
+    color: #000;
     text-align: left;
     font-size: 20px;
     margin-top: 15px;
 }
 
 p {
-    color: #FFFFFF;
+    color: #000;
     font-size: 14px;
     text-align: center;
     margin-top: 30px;
 }
 
 .campoEntrar {
-    background-color: #FB0000;
-    border: #FB0000;
+    background-color: #FFBB00;
+    border: #FFBB00;
+    border-radius: 8px;
     margin-top: 20px;
     width: 50%;
     padding: 10px;
@@ -71,16 +70,16 @@ p {
 .divLogin {
     width: 610px;
     padding: 50px;
-    background-color: #313841;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgb(255, 255, 255, 0.2);
+    background-color: #F6F6F6;
+    border-radius: 10px ;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255, 0.8);
     text-align: center;
     
 }
 
 
 .logo{
-    height: 90px;
+    height: 150px;
     align-items: left;
     
 }

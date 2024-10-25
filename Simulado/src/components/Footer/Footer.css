@@ -1,22 +1,18 @@
-footer{
+
+footer {
     text-align: center;
     font-size: 14px;
-    padding: 24px;
     font-weight: bolder;
+
     color: #f9d3b4;
     background-color: rgba(45, 45, 45, 11);
 }
 
-footer a{
-    text-decoration: none;
-    color: #f9d3b4;
+.info {
+    color: #000;
 }
-footer p ion-icon{
-    color: red;
+
+.quadro {
+    background-color: #E9E9E9;
+    margin-top: 20px;
 }
-.informacoes{
-    margin: 30px;
-}
-.quadro{
-    color: rgb(255, 255, 255);
-} 
